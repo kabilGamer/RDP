@@ -20,11 +20,11 @@ sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
 sudo adduser b4iterdev chrome-remote-desktop
 } &> /dev/null &&
-printf "\nSetup Complete \nCreated new user b4iterdev with password:b4iter \nYou can change both b4iterdev's password with passwd(with no sudo) \nOr you can change root's password with sudo passwd" >&2 ||
+printf "\nSetup Complete \nCreated new user kabildja with password:kabildja \nYou can change both kabildja's password with passwd(with no sudo) \nOr you can change root's password with sudo passwd" >&2 ||
 printf "\nError Occured " >&2
 printf '\nCheck https://remotedesktop.google.com/headless and copy command of Debian Linux \n'
 read -p "Paste Here: " CRP
-su - b4iterdev -c """$CRP"""
+su - kabildja -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 if sudo apt-get upgrade &> /dev/null
 then
